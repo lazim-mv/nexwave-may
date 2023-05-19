@@ -1,52 +1,52 @@
 import React, { useEffect } from "react";
 
 function About() {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const aboutContainers = document.querySelectorAll(".aboutContainer");
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     const aboutContainers = document.querySelectorAll(".aboutContainer");
 
-      aboutContainers.forEach((container, index) => {
-        container.addEventListener("mouseover", () => {
-          container.style.zIndex = "1";
-          container.style.height = "80vh";
-          container.style.flexDirection = "column";
-          container.style.alignItems = "center";
-          container.style.justifyContent = "center";
-          container.style.gap = "20px";
-          container.style.opacity = "1";
-          container.style.transitionDelay = "0.1s";
-          // container.style.marginBottom = "100px";
-          if (index > 0) {
-            for (let i = 0; i < index; i++) {
-              aboutContainers[i].style.zIndex = "-1";
-              aboutContainers[i].style.opacity = "0.5";
-            }
-          }
-        });
+  //     aboutContainers.forEach((container, index) => {
+  //       container.addEventListener("mouseover", () => {
+  //         container.style.zIndex = "1";
+  //         container.style.height = "80vh";
+  //         container.style.flexDirection = "column";
+  //         container.style.alignItems = "center";
+  //         container.style.justifyContent = "center";
+  //         container.style.gap = "20px";
+  //         container.style.opacity = "1";
+  //         container.style.transitionDelay = "0.1s";
+  //         // container.style.marginBottom = "100px";
+  //         if (index > 0) {
+  //           for (let i = 0; i < index; i++) {
+  //             aboutContainers[i].style.zIndex = "-1";
+  //             aboutContainers[i].style.opacity = "0.5";
+  //           }
+  //         }
+  //       });
 
-        container.addEventListener("mouseleave", () => {
-          container.style.zIndex = "2";
-          container.style.height = "150px";
-          container.style.flexDirection = "row";
-          container.style.alignItems = "center";
-          container.style.justifyContent = "flex-start";
-          container.style.gap = "0";
-          container.style.opacity = "0.5";
-          container.style.transitionDelay = "0s";
-          container.style.marginBottom = "0";
-          if (index > 0) {
-            for (let i = 0; i < index; i++) {
-              aboutContainers[i].style.zIndex = "2";
-              aboutContainers[i].style.opacity = "0.5";
-            }
-          }
-        });
-      });
-    }
-  }, []);
+  //       container.addEventListener("mouseleave", () => {
+  //         container.style.zIndex = "2";
+  //         container.style.height = "150px";
+  //         container.style.flexDirection = "row";
+  //         container.style.alignItems = "center";
+  //         container.style.justifyContent = "flex-start";
+  //         container.style.gap = "0";
+  //         container.style.opacity = "0.5";
+  //         container.style.transitionDelay = "0s";
+  //         container.style.marginBottom = "0";
+  //         if (index > 0) {
+  //           for (let i = 0; i < index; i++) {
+  //             aboutContainers[i].style.zIndex = "2";
+  //             aboutContainers[i].style.opacity = "0.5";
+  //           }
+  //         }
+  //       });
+  //     });
+  //   }
+  // }, []);
 
   return (
-    <div className="aboutHeight reveal">
+    <div id="about" className="aboutHeight reveal">
       <div className="whatWeDoContainer ">
         <h2 className="whatWeDo ">what we do</h2>
       </div>

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Header from "./components/Header";
 import Head from "next/head";
 import Hero from "./components/Hero";
@@ -14,8 +14,11 @@ import PrCard from "./components/PrCard";
 import Clients from "./components/Clients";
 import Testimonials from "./components/Testimonials";
 import MobileServices from "./components/MobileServices";
+import { useRouter } from "next/router";
+import NewClient from "./components/NewClient";
 
 export default function Home() {
+  const router = useRouter();
   function startAnimation(e) {
     const keywords = [
       "Digital Strategy",
@@ -74,8 +77,17 @@ export default function Home() {
     });
   }
 
-  useEffect(() => {
+  // function handleAboutClick() {
+  //   router.push("#about");
+  // }
 
+  useEffect(() => {
+    if (router.asPath === "#about") {
+      const aboutSection = document.getElementById("about");
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
     const elements = document.querySelectorAll(".animate");
     for (let i = 0; i < elements.length; i++) {
       startAnimation(elements[i]);
@@ -96,8 +108,6 @@ export default function Home() {
       }
     };
   }, [startAnimation, openingAnimation, showAfterCurtainAnimation]);
-
-
 
   return (
     <>
@@ -123,13 +133,13 @@ export default function Home() {
           </div>
         </div>
         <div className="showingAfterAnimation">
-          <Header />
+          <Header  />
           <Heronew />
           <IntroContents />
-          <About />
+          <About/>
           <Services />
-          <MobileServices/>
-          <Clients />
+          <MobileServices />
+          <NewClient />
           <Process />
           <Testimonials />
           {/* <Form /> */}

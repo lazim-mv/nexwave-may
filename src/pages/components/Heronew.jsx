@@ -2,7 +2,7 @@ import React from "react";
 
 function Heronew() {
   return (
-    <div className="heroNewContainer">
+    <div id="heroNew" className="heroNewContainer">
       <div className="heroContainerNew">
         <div className="heroNewH1Container">
           <h1 className="gradientText">
