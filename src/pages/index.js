@@ -77,17 +77,7 @@ export default function Home() {
     });
   }
 
-  // function handleAboutClick() {
-  //   router.push("#about");
-  // }
-
   useEffect(() => {
-    if (router.asPath === "#about") {
-      const aboutSection = document.getElementById("about");
-      if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
     const elements = document.querySelectorAll(".animate");
     for (let i = 0; i < elements.length; i++) {
       startAnimation(elements[i]);
