@@ -1,8 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import Header from "./components/Header";
 import Head from "next/head";
-import Hero from "./components/Hero";
-import Cards from "./components/Cards";
 import Heronew from "./components/Heronew";
 import About from "./components/About";
 import IntroContents from "./components/IntroContents";
@@ -10,16 +8,12 @@ import Services from "./components/Services";
 import Process from "./components/Process";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
-import PrCard from "./components/PrCard";
-import Clients from "./components/Clients";
 import Testimonials from "./components/Testimonials";
 import MobileServices from "./components/MobileServices";
-import { useRouter } from "next/router";
 import NewClient from "./components/NewClient";
 
 export default function Home() {
-  const router = useRouter();
-  function startAnimation(e) {
+  const startAnimation = (element) => {
     const keywords = [
       "Digital Strategy",
       "Branding",
@@ -34,17 +28,20 @@ export default function Home() {
     const interval = setInterval(() => {
       const currentWord = keywords[wordIndex];
       if (currentWord !== prevWord) {
-        e.innerText = currentWord;
+        element.innerText = currentWord;
         prevWord = currentWord;
       }
-      if (wordIndex === keywords.length - 1 && currentWord === prevWord) {
+      if (
+        wordIndex === keywords.length - 1 &&
+        currentWord === prevWord
+      ) {
         clearInterval(interval);
       }
       wordIndex = (wordIndex + 1) % keywords.length;
     }, 200);
-  }
+  };
 
-  function openingAnimation() {
+  const openingAnimation = () => {
     const mainEl = document.querySelector(".main");
     const animateEl = document.querySelector(".animate");
     const topContainer = document.querySelector(".topContainer");
@@ -67,21 +64,19 @@ export default function Home() {
       hideMain();
     });
     topContainer.addEventListener("animationend", removeStyles);
-  }
+  };
 
-  function showAfterCurtainAnimation() {
+  const showAfterCurtainAnimation = () => {
     const mainEl = document.querySelector(".main");
     const showingAfter = document.querySelector(".showingAfterAnimation");
     mainEl.addEventListener("animationend", () => {
       showingAfter.classList.add("showing");
     });
-  }
+  };
 
   useEffect(() => {
     const elements = document.querySelectorAll(".animate");
-    for (let i = 0; i < elements.length; i++) {
-      startAnimation(elements[i]);
-    }
+    elements.forEach((element) => startAnimation(element));
 
     setTimeout(openingAnimation, 0);
     setTimeout(showAfterCurtainAnimation, 2600);
@@ -97,7 +92,7 @@ export default function Home() {
         mainEl.removeEventListener("animationend", showAfterCurtainAnimation);
       }
     };
-  }, [startAnimation, openingAnimation, showAfterCurtainAnimation]);
+  }, []);
 
   return (
     <>
