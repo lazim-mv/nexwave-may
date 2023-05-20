@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 import MobileServices from "./components/MobileServices";
 import NewClient from "./components/NewClient";
+import Contact from './components/ContactForm'
 
 export default function Home() {
   const startAnimation = (element) => {
@@ -128,6 +129,7 @@ export default function Home() {
           <NewClient />
           <Process />
           <Testimonials />
+          <Contact/>
           {/* <Form /> */}
           <Footer />
           {/* <Hero /> */}

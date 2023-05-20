@@ -50,7 +50,18 @@ function Header() {
               </Nav.Item>
             </Nav>
             <Nav className="ms-auto headerContact">
-              <Nav.Link href="#">Contact</Nav.Link>
+              <Nav.Item >
+              <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="hbtn"
+                >
+                  Contact
+                </Link>
+              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
         </Container>
