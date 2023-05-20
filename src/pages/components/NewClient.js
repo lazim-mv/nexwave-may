@@ -14,52 +14,52 @@ function NewClient() {
       <div class="slider">
         <div class="slider-track">
             <div class="slide">
-                <Image src={Alweena} className="slide"/>
+                <Image src={Alweena} className="slide" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={Ecpik} className="ecpik slide"/>
+                <Image src={Ecpik} className="ecpik slide" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={Gazal} className="slide"/>
+                <Image src={Gazal} className="slide" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={InterCool} className="slide"/>
+                <Image src={InterCool} className="slide" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={Alweena} className="slide"/>
+                <Image src={Alweena} className="slide" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={Ecpik} className="ecpik"/>
+                <Image src={Ecpik} className="ecpik" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={Gazal} className="slide"/>
+                <Image src={Gazal} className="slide" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={InterCool} className="slide"/>
+                <Image src={InterCool} className="slide" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={Alweena} className="slide"/>
+                <Image src={Alweena} className="slide" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={Ecpik} className="ecpik"/>
+                <Image src={Ecpik} className="ecpik" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={Gazal} className="slide"/>
+                <Image src={Gazal} className="slide" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={InterCool} className="slide"/>
+                <Image src={InterCool} className="slide" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={Alweena} className="slide"/>
+                <Image src={Alweena} className="slide" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={Ecpik} className="ecpik"/>
+                <Image src={Ecpik} className="ecpik" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={Gazal} className="slide"/>
+                <Image src={Gazal} className="slide" alt="Img"/>
             </div>
             <div class="slide">
-                <Image src={InterCool} className="slide"/>
+                <Image src={InterCool} className="slide" alt="Img"/>
             </div>
         </div>
     </div>

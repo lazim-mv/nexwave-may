@@ -6,6 +6,7 @@ import About from "./components/About";
 import IntroContents from "./components/IntroContents";
 import Services from "./components/Services";
 import Process from "./components/Process";
+import Cards from "./components/Cards"
 import Form from "./components/Form";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
