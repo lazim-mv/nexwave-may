@@ -3,6 +3,7 @@ import React from "react";
 function ContactForm() {
   return (
     <div id="contact" className="contactFormHeight">
+    <div className="blur"></div>
       <div className="contactCircle">
         <div className="contactContent">
           <input type="text" placeholder="Full Name"/>
