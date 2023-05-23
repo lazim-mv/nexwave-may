@@ -17,6 +17,7 @@
   --color-secondary: #0e1d34;
   /* --box-shadow1: 0 0 10px 2px #21c38c; */
   --box-shadow1: 0 0 10px 2px whitesmoke;
+  --mobileFontHeading: 1.7rem;
 
   --padding: 0.05em;
   --start-color: #7928CA;
@@ -673,7 +674,6 @@ section .cardContainer .cardDesc{
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   width: 99%;
-  height: 40px;
   margin: 0px auto;
   width: 99%;
 }
@@ -681,6 +681,7 @@ section .cardContainer .cardDesc{
 .whatWeDo{
   letter-spacing: 4px;
   text-transform: uppercase;
+  font-size: 3rem;
 }
 
 .serviceTopContainer {
@@ -724,7 +725,7 @@ section .cardContainer .cardDesc{
 }
 
 .serviceP {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.5;
   letter-spacing: 2px;
 }
@@ -737,7 +738,7 @@ section .cardContainer .cardDesc{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .processContainer{
@@ -750,19 +751,6 @@ section .cardContainer .cardDesc{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.processH1Container{
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  justify-content: flex-start;
-}
-
-.processH1Container h1{
-  font-size: 3.1vw;
-  letter-spacing: 1.6px;
 }
 
 .processDescContainer{
@@ -1079,7 +1067,7 @@ section .cardContainer .cardDesc{
 
 .testimonialHeight{
   margin: 0px auto;
-  margin-top: 200px;
+  padding-top: 10vh;
   width: 90%;
 }
 
@@ -1230,7 +1218,6 @@ section .cardContainer .cardDesc{
 
 .contactSquareWrapper{
   display: flex;
-  justify-content: flex-end;
 }
 
 .contactHeadingMobile{
@@ -1261,7 +1248,7 @@ section .cardContainer .cardDesc{
   padding: 30px 0px;
   position: relative;
   z-index: 1;
-  margin-top: 25px;
+  margin-top: 55px;
   margin-right: 25px;
 }
 
@@ -1620,12 +1607,18 @@ section .cardContainer .cardDesc{
     display: block;
     width: 100%;
     margin: 0px auto;
-    margin-top: 80px;
+    margin-top: 15vh;
     margin-bottom: 80px;
   }
 
   .whatsToExpectContainer{
     width: 90%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  
+  .whatsToExpectContainer .whatWeDo{
+    font-size: var(--mobileFontHeading);
   }
 
   .serviceTopContainer{
@@ -1678,12 +1671,14 @@ section .cardContainer .cardDesc{
 
   .whatWeDoContainer{
     width: 90%;
-    height: 38px;
+    /* height: 38px; */
     margin: 0px auto;
+    padding-bottom: 25px;
+    padding-top: 10px;
   }
 
   .whatWeDo{
-    font-size: (1.325rem + .9vw);
+    font-size: var(--mobileFontHeading);
     font-weight: 600;
     text-align: center;
     margin: 0px;
@@ -1751,6 +1746,7 @@ section .cardContainer .cardDesc{
 
   .aboutH1{
     font-size: 6.7vw;
+    font-weight: 500;
   }
 
   .aboutContainer .aboutDesc{
@@ -1825,14 +1821,11 @@ section .cardContainer .cardDesc{
     width: 100%;
   }
 
-  .processH1Container{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .processH1Container h1{
-    font-size: 24px;
+  .processContentsContainer .ourClientsContainer{
+    width: 99%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 17px;
   }
 
   .processDescContainer{
@@ -1841,7 +1834,8 @@ section .cardContainer .cardDesc{
   }
 
   .processP{
-    font-size: 12px;
+    margin-top: 10px;
+    font-size: 16px;
     text-align: center;
   }
 
@@ -1855,22 +1849,26 @@ section .cardContainer .cardDesc{
 
   .clientsHeight1{
     margin: 0px auto;
-    margin-top: 40px;
+    margin-top: 20vh;
     width: 100%;
   }
 
   .slider{
-    margin-bottom: 30px;
+    width: 90%;
+    margin-bottom: 7vh;
+    margin-top: 7vh;
   }
 
   .ourClientsContainer{
-    height: 65px;
+    /* height: 65px; */
     width: 90%;
     margin: 0px auto;
+    padding-bottom: 50px;
+    padding-top: 10px;
   }
 
   .ourClientsContainer .whatWeDo{
-    font-size: calc(1.325rem + .9vw);
+    font-size: var(--mobileFontHeading);
   }
 
   /* New Client Section End */
@@ -1882,9 +1880,9 @@ section .cardContainer .cardDesc{
     width: 100%;
   }
 
-  .TestimaonialsContainer .ourClientsContainer{
+  /* .TestimaonialsContainer .ourClientsContainer{
     height: 64px;
-  }
+  } */
 
   .carousel-item .flexcontainer{
     height: 400px;

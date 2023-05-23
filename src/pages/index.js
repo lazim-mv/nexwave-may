@@ -6,7 +6,6 @@ import About from "./components/About";
 import IntroContents from "./components/IntroContents";
 import Services from "./components/Services";
 import Process from "./components/Process";
-import Form from "./components/Form";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 import MobileServices from "./components/MobileServices";
@@ -130,9 +129,7 @@ export default function Home() {
           <Process />
           <Testimonials />
           <ContactSquare/>
-          {/* <Form /> */}
           <Footer />
-          {/* <Hero /> */}
         </div>
       </div>
     </>

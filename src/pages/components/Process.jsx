@@ -3,10 +3,10 @@ import React from "react";
 function Process() {
   return (
     <div className="processHeight reveal">
-      <div className="processContainer reveal">
+      <div className="processContainer ">
         <div className="processContentsContainer">
-          <div className="processH1Container processContainer">
-            <h2>Our&nbsp;Process</h2>
+          <div className="ourClientsContainer">
+            <h2 className="whatWeDo">Our&nbsp;Process</h2>
           </div>
           <div className="processDescContainer">
             <p className="processP">
