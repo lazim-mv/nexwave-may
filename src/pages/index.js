@@ -6,13 +6,13 @@ import About from "./components/About";
 import IntroContents from "./components/IntroContents";
 import Services from "./components/Services";
 import Process from "./components/Process";
-import Cards from "./components/Cards"
 import Form from "./components/Form";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 import MobileServices from "./components/MobileServices";
 import NewClient from "./components/NewClient";
 import Contact from './components/ContactForm'
+import ContactSquare from "./components/ContactSquare";
 
 export default function Home() {
   const startAnimation = (element) => {
@@ -129,11 +129,10 @@ export default function Home() {
           <NewClient />
           <Process />
           <Testimonials />
-          <Contact/>
+          <ContactSquare/>
           {/* <Form /> */}
           <Footer />
           {/* <Hero /> */}
-          {/* <Cards /> */}
         </div>
       </div>
     </>
