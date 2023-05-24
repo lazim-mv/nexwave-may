@@ -1067,7 +1067,7 @@ section .cardContainer .cardDesc{
 
 .testimonialHeight{
   margin: 0px auto;
-  padding-top: 10vh;
+  margin-top: 200px;
   width: 90%;
 }
 
@@ -1218,6 +1218,7 @@ section .cardContainer .cardDesc{
 
 .contactSquareWrapper{
   display: flex;
+  justify-content: flex-end;
 }
 
 .contactHeadingMobile{
@@ -1248,7 +1249,7 @@ section .cardContainer .cardDesc{
   padding: 30px 0px;
   position: relative;
   z-index: 1;
-  margin-top: 55px;
+  margin-top: 25px;
   margin-right: 25px;
 }
 
@@ -1607,7 +1608,7 @@ section .cardContainer .cardDesc{
     display: block;
     width: 100%;
     margin: 0px auto;
-    margin-top: 15vh;
+    margin-top: 80px;
     margin-bottom: 80px;
   }
 
@@ -1746,7 +1747,6 @@ section .cardContainer .cardDesc{
 
   .aboutH1{
     font-size: 6.7vw;
-    font-weight: 500;
   }
 
   .aboutContainer .aboutDesc{
@@ -1834,8 +1834,7 @@ section .cardContainer .cardDesc{
   }
 
   .processP{
-    margin-top: 10px;
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
   }
 
@@ -1849,14 +1848,13 @@ section .cardContainer .cardDesc{
 
   .clientsHeight1{
     margin: 0px auto;
-    margin-top: 20vh;
+    margin-top: 40px;
     width: 100%;
   }
 
   .slider{
     width: 90%;
-    margin-bottom: 7vh;
-    margin-top: 7vh;
+    margin-bottom: 30px;
   }
 
   .ourClientsContainer{

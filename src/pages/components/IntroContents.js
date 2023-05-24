@@ -14,6 +14,7 @@ function IntroContents() {
 
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
+      console.log(windowHeight);
       var revealTop = reveals[i].getBoundingClientRect().top;
       var revealPoint = 40;
 
