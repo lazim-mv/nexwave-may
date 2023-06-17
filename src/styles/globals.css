@@ -171,6 +171,17 @@ p{
   scale: 2;
 }
 
+.navbar-brand a{
+  color: #C9D6DF;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.navbar-brand a:hover{
+  color: #C9D6DF;
+  opacity: 0.8;
+}
+
 div .bsHeader{
   background-color: #000 !important;
   height: 60px;
@@ -188,7 +199,8 @@ div .hList{
   justify-content: center;
   background: #222;
   padding-top: 5px;
-  box-shadow: var(--box-shadow1);
+  border: 1px solid #C9D6DF;
+  /* box-shadow: var(--box-shadow1); */
 }
 
 .hbtn{
@@ -208,10 +220,15 @@ div .hList{
 .Home{
   color: #F8F8FF;
   padding: 20px;
+  text-decoration: none;
+  opacity: 1;
 }
 
 .Home:hover{
+  color: #F8F8FF;
   cursor: pointer;
+  opacity: 0.8;
+
 }
 
 /* Header Section Ends */
@@ -278,13 +295,14 @@ div .hList{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 4px;
   align-self: flex-start;
   margin-right: 15px;
   z-index: 2;
   margin: 0px auto;
   background: #222;
-  box-shadow: var(--box-shadow1);
+  border: 1px solid #C9D6DF;
+  /* box-shadow: var(--box-shadow1); */
 }
 
 .buttonContainer:hover{
@@ -1158,6 +1176,7 @@ section .cardContainer .cardDesc{
   gap: 20px;
   width: 80%;
   z-index: 1;
+  margin: 0px auto;
 }
 
 .contactContent input{
@@ -1178,6 +1197,25 @@ section .cardContainer .cardDesc{
   font-size: 20px;
   font-weight: bold;
   margin: 25px auto;
+}
+
+.dFlexStart{
+  align-self: flex-start;
+  margin: 25px 0;
+}
+
+.btnSquare{
+  font-size: 16px;
+  font-weight: 500;
+  background: white;
+  color: black;
+  padding: 10px 20px; 
+  opacity: 1;
+}
+
+.btnSquare:hover{
+  opacity: 0.8;
+  transform: translateY(-2px);
 }
 
 .contactContent .buttonContainer:hover{
