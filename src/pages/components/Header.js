@@ -14,7 +14,7 @@ function Header() {
         <Container>
           <Navbar.Brand>
             <Link
-              activeClass="active"
+              // activeClass="active"
               to="heroNew"
               spy={true}
               smooth={true}
@@ -29,7 +29,7 @@ function Header() {
             <Nav className="ms-auto hList">
               <Nav.Item className="Home">
                 <Link
-                  activeClass="active"
+                  // activeClass="active"
                   to="heroNew"
                   spy={true}
                   smooth={true}
@@ -40,7 +40,7 @@ function Header() {
               </Nav.Item>
               <Nav.Item className="Home">
                 <Link
-                  activeClass="active"
+                  // activeClass="active"
                   to="about"
                   spy={true}
                   smooth={true}
@@ -53,7 +53,7 @@ function Header() {
             <Nav className="ms-auto headerContact">
               <Nav.Item >
               <Link
-                  activeClass="active"
+                  // activeClass="active"
                   to="contact"
                   spy={true}
                   smooth={true}

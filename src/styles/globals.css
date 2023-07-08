@@ -162,6 +162,16 @@ p{
 }
 
 /* Header Section */
+
+.hContainer{
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background: black;
+}
+
 .navbar-dark{
   height: 75px !important;
   padding-top: 0px !important;
@@ -1513,6 +1523,7 @@ section .cardContainer .cardDesc{
   .hContainer{
     width: 90%;
     margin: 0px auto;
+    width: 100%;
   }
 
   .navbar-dark{
